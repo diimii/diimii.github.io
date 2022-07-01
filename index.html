@@ -1,20 +1,179 @@
 <!doctype html>
+<html lang="en" class="h-100">
 
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Dimitri Romeo</title>
-  <meta name="description" content="Dimitri Romeo freelancer web developer">
-  <meta name="author" content="Dimitri Romeo">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dimitri Romeo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="./stylesheets/styles.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="./assets/animate/animate.min.css" rel="stylesheet">
 </head>
 
-<body style="width: 100%; height: 100%; background-color: #F6F6F6">
-  <div style="flex:1; width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <h1>Website is under construction. Please come back later.</h1>
-      <img src="./workinprogress.png" alt="underConstruction">
-  </div>
+<body class="d-flex h-100 text-center text-white bg-dark d-flex flex-column">
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div id="particles-js"></div>
+            <section id="home" class="background-cover d-flex w-100 min-vh-100 vh-100 p-3 mx-auto flex-column">
+                <header class="header container">
+                    <div>
+                        <h3 class="float-md-start mb-0 nav-name">Dimitri</h3>
+                        <nav class="nav nav-masthead justify-content-center float-md-end">
+                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#home">HOME</a>
+                            <a class="nav-link fw-bold py-1 px-0" href="#about">ABOUT</a>
+                            <a class="nav-link fw-bold py-1 px-0" href="#services">SERVICES</a>
+                            <a class="nav-link fw-bold py-1 px-0" href="#contact">CONTACT</a>
+                        </nav>
+                    </div>
+                </header>
+
+                <div class="container h-100 d-flex flex-row justify-content-center align-items-center">
+                    <div class="animate__animated animate__zoomIn zoomInCustomization">
+                        <div class="border-white bg-dark banner">
+                            <div class="profile-container">
+                                <div class="circle-ripple"></div>
+                                <img src="./assets/foto.png" alt="asd" class="img-fluid">
+                            </div>
+                            <div class="banner-text">
+                                <h1>Dimitri Romeo</h1>
+                                <h2>Frontend Developer & Blockchain enthusiast</h2>
+                            </div>
+                            <ul class="social">
+                                <li> <a href="https://www.linkedin.com/in/dimitri-romeo-652b4a144/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
+                                <li> <a href="https://github.com/diimii" target="_blank"> <i class="fa-brands fa-github"></i> </a> </li>
+                                <li> <a href="https://www.instagram.com/diimiiz_official/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a> </li>
+                                <li> <a href="mailto:dimitri.romeo@outlook.it" target="_blank"> <i class="fa-solid fa-envelope"></i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-container container">
+                <div class="row">
+                    <div class="vh-50 col-md-6 d-flex align-items-center justify-content-center">
+                        <div class="image-container">
+                            <div class="profile-image"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <div class="profile-title banner-text pt-5 d-flex flex-column">
+                            <h1 class="text-start">About me</h1>
+                            <div class="left-divider"></div>
+                        </div>
+                        <div class="profile-description d-flex flex-column">
+                            <p class="text-start w-100">I started as a <b>Front-end Developer</b> in 2017 by working in
+                                different companies, then in 2020 I decided to quit my job and start working as a
+                                <b>Freelancer</b>. <br> Currently i deal with the creation of <b>Web and Mobile
+                                    Applications</b> for different enterprises form all over the world.
+                            </p>
+                            <p class="text-start w-100">I am an enterprising guy with a lot of willpower, and I always
+                                try to keep up with the times by deepening new technologies.</p>
+                            <p class="text-start w-100">I recently started an innovative startup called <a
+                                    href="https://codemount.studio" target="_blank" class="border-light">Codemount
+                                    Studio</a>.</p>
+                            <div class="button-container">
+                                <button type="button" class="w-100 btn btn-primary btn-lg">Hire me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="services" class="services-container container">
+                <div class="banner-text d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="text-start">Services</h1>
+                    <div class="left-divider"></div>
+                </div>
+                <div class="row g-3 my-5">
+                    <div class="col-md-6 col-background">
+                        <div class="service p-5 bg-gradient-green">
+                            <div class="service-icon w-100 text-start">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <div class="service-title">
+                                <h1 class="text-start">Web Application Architecture</h1>
+                                <p class="service-text text-start">
+                                    I follow the architecture process of a web application indicating the best methods and the approach to use.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-background">
+                        <div class="service p-5 bg-gradient-green">
+                            <div class="service-icon w-100 text-start">
+                                <i class="fa-regular fa-window-maximize"></i>
+                            </div>
+                            <div class="service-title">
+                                <h1 class="text-start">UI/UX design</h1>
+                                <p class="service-text text-start">
+                                    I design responsive web applications and mobile applications, taking care of the user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-background">
+                        <div class=" service p-5 bg-gradient-green">
+                            <div class="service-icon w-100 text-start">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="service-title">
+                                <h1 class="text-start">Web Development</h1>
+                                <p class="service-text text-start">
+                                    I develop responsive landing pages, portfolios, CMS and complex custom web applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-background">
+                        <div class=" service p-5 bg-gradient-green">
+                            <div class="service-icon w-100 text-start">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div class="service-title">
+                                <h1 class="text-start">Mobile Development</h1>
+                                <p class="service-text text-start">
+                                    I develop mobile applications using the latest technologies on the market.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-background">
+                        <div class=" service p-5 bg-gradient-green">
+                            <div class="service-icon w-100 text-start">
+                                <i class="fa-regular fa-file-code"></i>
+                            </div>
+                            <div class="service-title">
+                                <h1 class="text-start">Smart Contract Development</h1>
+                                <p class="service-text text-start">
+                                    I develop and deploy smart conctracts written in Solidity, i also deal with the integration of existing smart contracts into a frontend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills-container container">
+                
+            </section>
+        </div>
+    </div>
+    <!-- <footer class="mt-auto position-absolute bottom-0 text-white-50">
+        <p>Website dimitri</p>
+    </footer> -->
+    <script src="./js/particles.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

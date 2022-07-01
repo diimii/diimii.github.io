@@ -1,0 +1,355 @@
+:root {
+    --black: #212529;
+    --green: #1CB698;
+    --light-green: rgba(26, 179, 148, 0.85);
+}
+
+/*
+ * Base structure
+ */
+html {  
+    scroll-behavior: smooth;
+}
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+/*
+ * Globals
+ */
+
+ .vh-50 {
+    height: 50vh;
+ }
+
+ .bg-gradient-green {
+    background:  rgba(28, 182, 152, 0.8);  /* fallback for old browsers */
+ }
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Header
+ */
+
+.header{
+    z-index: 999;
+}
+
+.nav-masthead .nav-link {
+    color: rgba(255, 255, 255, .5);
+    font-family: 'Righteous', cursive;
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+}
+
+.nav-name {
+    font-family: 'Righteous', cursive;
+    color: #1BB697;
+    text-transform: uppercase;
+}
+
+.background-cover {
+    position: relative;
+    background-image: url(../assets/background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--black);
+    width: 100%;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+#particles-js canvas {
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0
+}
+
+/* 
+    PROFILE PHOTO
+*/
+
+.zoomInCustomization {
+    animation-duration: 1.25s !important;
+    z-index: 2;
+}
+
+.banner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #252A2E;
+    box-shadow: -1rem 0 3rem rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding: 50px;
+    padding-top: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.banner-text h1 {
+    font-family: 'Righteous', cursive;
+    color: #FFF;
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.banner-text h2 {
+    color: #FFF;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.img-fluid {
+    position: relative;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 250px;
+    z-index: 10;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* SOCIAL LINKS */
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social li a {
+    font-size: 20px;
+    color: #FFF;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    display: block;
+    border-radius: 100%;
+    border: 1px solid #FFF;
+}
+
+.social li a:hover {
+    background: var(--green);
+    border-color: var(--green);
+}
+
+
+/* 
+    CIRCLE RIPPLE GREEN AROUND PHOTO
+*/
+.circle-ripple {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.circle-ripple {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    animation: ripple 1s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(28, 182, 152, 0.2), 0 0 0 1em rgba(28, 182, 152, 0.2), 0 0 0 3em rgba(28, 182, 152, 0.2), 0 0 0 5em rgba(28, 182, 152, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 1em rgba(28, 182, 152, 0.2), 0 0 0 3em rgba(28, 182, 152, 0.2), 0 0 0 5em rgba(28, 182, 152, 0.2), 0 0 0 8em rgba(28, 182, 152, 0);
+    }
+}
+
+
+
+/* 
+    ABOUT
+*/
+
+
+.about-container {
+    background-color: var(--black);
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.left-divider{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #1BB697;
+    width: 0%;
+    border-radius: 3px;
+}
+
+.image-container{
+    width: 80%;
+    height: 100%;
+    border: 10px solid var(--green);
+    border-radius: 3px;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.profile-image{
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+}
+
+.profile-image {
+    position: relative;
+    background-image: url(../assets/img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--black);
+    width: 100%;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.profile-title{
+    opacity: 0;
+}
+
+.profile-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    opacity: 0;
+}
+
+.profile-description p {
+    font: 400 1rem 'Roboto Slab';
+    line-height: 30px;
+}
+
+.profile-description b {
+    font: bold 1rem 'Roboto Slab';
+    color: var(--green);
+    line-height: 30px;
+}
+
+.profile-description a {
+    font: bold 1rem 'Roboto Slab';
+    color: var(--green);
+    line-height: 30px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.button-container button{
+    border-radius: 3px;
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.button-container button:hover, button:focus, button:active{
+    border-radius: 3px;
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+}
+
+/* SERVICES */
+
+.col-background{
+    position: relative;
+    background-image: url(../assets/background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    opacity: 0;
+}
+
+.service {
+    height: 15rem;
+    border-radius: 3px;
+}
+
+.service-icon i {
+    font-size: 2.25rem;
+}
+
+.service-title h1{
+    margin: 0 !important;
+    padding: 10px 0;
+    font: bold 1.85rem 'Roboto Slab' !important;
+}
+
+@media screen and (max-width: 768px){
+
+    .service-title h1{
+        margin: 0 !important;
+        padding: 10px 0;
+        font: bold 1.35rem 'Roboto Slab' !important;
+    }
+}
+
+.service-text p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font: regular 0.85rem 'Roboto Slab' !important;
+}
